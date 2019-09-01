@@ -1,0 +1,12 @@
+$TTL 86400
+@       IN      SOA     dns.tabiya.local. root.tabiya.local. (
+                        2019090102  ;       serial
+                        21600       ;       refresh
+                        3600        ;       retry
+                        604800      ;       expire
+                        2600        ;       minimum
+                        )
+        IN      NS      dns.tabiya.local.
+200     IN      PTR     dns.tabiya.local.
+160     IN      PTR     www.tabiya.local.
+190     IN      PTR     ssh.tabiya.local.
