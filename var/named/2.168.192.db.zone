@@ -13,3 +13,6 @@ $TTL 86400
 166     IN      PTR     srv2.tabiya.local.
 167     IN      PTR     srv3.tabiya.local.
 190     IN      PTR     ssh.tabiya.local.
+170     IN      PTR     home.tabiya.local.
+171     IN      PTR     ans1.tabiya.local.
+172     IN      PTR     ans2.tabiya.local.
