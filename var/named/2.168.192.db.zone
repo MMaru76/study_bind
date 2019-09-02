@@ -9,4 +9,7 @@ $TTL 86400
         IN      NS      dns.tabiya.local.
 200     IN      PTR     dns.tabiya.local.
 160     IN      PTR     www.tabiya.local.
+165     IN      PTR     srv1.tabiya.local.
+166     IN      PTR     srv2.tabiya.local.
+167     IN      PTR     srv3.tabiya.local.
 190     IN      PTR     ssh.tabiya.local.

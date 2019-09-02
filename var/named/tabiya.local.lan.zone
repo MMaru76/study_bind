@@ -9,4 +9,7 @@ $TTL 86400
         IN      NS      dns.tabiya.local.
 dns     IN      A       192.168.2.200
 www     IN      A       192.168.2.160
+srv1    IN      A       192.168.2.165
+srv2    IN      A       192.168.2.166
+srv3    IN      A       192.168.2.167
 ssh     IN      A       192.168.2.190
