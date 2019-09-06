@@ -1,23 +1,35 @@
 $TTL 86400
 @       IN      SOA     dns.tabiya.local. root.tabiya.local. (
-                        2019090201  ;       serial
+                        2019090601  ;       serial
                         21600       ;       refresh
                         3600        ;       retry
                         604800      ;       expire
                         2600        ;       minimum
                         )
         IN      NS      dns.tabiya.local.
+; DNS
 dns     IN      A       192.168.2.200
+
+; TEST
 test1   IN      A       192.168.2.91
 test2   IN      A       192.168.2.92
 test3   IN      A       192.168.2.93
 test4   IN      A       192.168.2.94
 test5   IN      A       192.168.2.95
+
+; WEB = NGINX
 www     IN      A       192.168.2.160
 srv1    IN      A       192.168.2.165
 srv2    IN      A       192.168.2.166
 srv3    IN      A       192.168.2.167
+
+; ANSIBLE
 home    IN      A       192.168.2.170
 ans1    IN      A       192.168.2.171
 ans2    IN      A       192.168.2.172
+
+; unknown
 ssh     IN      A       192.168.2.190
+
+; MARU
+t460    IN      A       192.168.2.140
