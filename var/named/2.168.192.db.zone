@@ -1,6 +1,6 @@
 $TTL 86400
 @       IN      SOA     dns.tabiya.local. root.tabiya.local. (
-                        2019090602  ;       serial
+                        2019090701  ;       serial
                         21600       ;       refresh
                         3600        ;       retry
                         604800      ;       expire
@@ -16,6 +16,11 @@ $TTL 86400
 93      IN      PTR     test3.tabiya.local.
 94      IN      PTR     test4.tabiya.local.
 95      IN      PTR     test5.tabiya.local.
+
+; MINECRAFT
+140     IN      PTR     mine.tabiya.local.
+141     IN      PTR     elb1.tabiya.local.
+142     IN      PTR     elb2.tabiya.local.
 
 ; WEB = NGINX
 160     IN      PTR     www.tabiya.local.
