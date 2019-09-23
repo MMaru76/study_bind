@@ -1,6 +1,6 @@
 $TTL 86400
 @       IN      SOA     dns.tabiya.local. root.tabiya.local. (
-                        2019090701  ;       serial
+                        2019092301  ;       serial
                         21600       ;       refresh
                         3600        ;       retry
                         604800      ;       expire
@@ -10,7 +10,12 @@ $TTL 86400
 ; DNS
 200     IN      PTR     dns.tabiya.local.
 
+; DB
+31      IN      PTR     db31.tabiya.local.
+
 ; TEST
+41      IN      PTR     test41.tabiya.local.
+42      IN      PTR     test41.tabiya.local.
 91      IN      PTR     test1.tabiya.local.
 92      IN      PTR     test2.tabiya.local.
 93      IN      PTR     test3.tabiya.local.

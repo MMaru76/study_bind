@@ -1,6 +1,6 @@
 $TTL 86400
 @       IN      SOA     dns.tabiya.local. root.tabiya.local. (
-                        2019090701  ;       serial
+                        2019092301  ;       serial
                         21600       ;       refresh
                         3600        ;       retry
                         604800      ;       expire
@@ -10,7 +10,12 @@ $TTL 86400
 ; DNS
 dns     IN      A       192.168.2.200
 
+; DB
+db31    IN      A       192.168.2.31
+
 ; TEST
+test41  IN      A       192.168.2.41
+test42  IN      A       192.168.2.42
 test1   IN      A       192.168.2.91
 test2   IN      A       192.168.2.92
 test3   IN      A       192.168.2.93
