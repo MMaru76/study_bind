@@ -1,6 +1,6 @@
 $TTL 86400
 @       IN      SOA     dns.tabiya.local. root.tabiya.local. (
-                        2019092301  ;       serial
+                        2019092401  ;       serial
                         21600       ;       refresh
                         3600        ;       retry
                         604800      ;       expire
@@ -37,6 +37,7 @@ srv3    IN      A       192.168.2.167
 home    IN      A       192.168.2.170
 ans1    IN      A       192.168.2.171
 ans2    IN      A       192.168.2.172
+home1   IN      A       192.168.2.175
 
 ; unknown
 ssh     IN      A       192.168.2.190
