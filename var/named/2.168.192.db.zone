@@ -1,6 +1,6 @@
 $TTL 86400
 @       IN      SOA     dns.tabiya.local. root.tabiya.local. (
-                        2019092402  ;       serial
+                        2019102601  ;       serial
                         21600       ;       refresh
                         3600        ;       retry
                         604800      ;       expire
@@ -12,20 +12,20 @@ $TTL 86400
 
 ; DB
 31      IN      PTR     db31.tabiya.local.
+32      IN      PTR     db32.tabiya.local.
+33      IN      PTR     db33.tabiya.local.
 
 ; TEST
-41      IN      PTR     test41.tabiya.local.
-42      IN      PTR     test41.tabiya.local.
-91      IN      PTR     test1.tabiya.local.
-92      IN      PTR     test2.tabiya.local.
-93      IN      PTR     test3.tabiya.local.
-94      IN      PTR     test4.tabiya.local.
-95      IN      PTR     test5.tabiya.local.
+91      IN      PTR     test91.tabiya.local.
+92      IN      PTR     test92.tabiya.local.
+93      IN      PTR     test93.tabiya.local.
+94      IN      PTR     test94.tabiya.local.
+95      IN      PTR     test95.tabiya.local.
 
 ; MINECRAFT
 140     IN      PTR     mine.tabiya.local.
-141     IN      PTR     elb1.tabiya.local.
-142     IN      PTR     elb2.tabiya.local.
+141     IN      PTR     elb141.tabiya.local.
+142     IN      PTR     elb142.tabiya.local.
 
 ; WEB = NGINX
 160     IN      PTR     www.tabiya.local.
@@ -33,14 +33,16 @@ $TTL 86400
 166     IN      PTR     srv2.tabiya.local.
 167     IN      PTR     srv3.tabiya.local.
 
-; ANSIBLE
-170     IN      PTR     home.tabiya.local.
-171     IN      PTR     ans1.tabiya.local.
-172     IN      PTR     ans2.tabiya.local.
-175     IN      PTR     home1.tabiya.local.
-176     IN      PTR     home2.tabiya.local.
+; ANSIBLE = HOST
+170     IN      PTR     home170.tabiya.local.
+171     IN      PTR     home171.tabiya.local.
+
+; ANSIBLE = GUEST
 181     IN      PTR     ans181.tabiya.local.
 182     IN      PTR     ans182.tabiya.local.
+183     IN      PTR     ans183.tabiya.local.
+184     IN      PTR     ans184.tabiya.local.
+185     IN      PTR     ans185.tabiya.local.
 
 ; unknown
 190     IN      PTR     ssh.tabiya.local.

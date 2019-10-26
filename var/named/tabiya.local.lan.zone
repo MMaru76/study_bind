@@ -1,6 +1,6 @@
 $TTL 86400
 @       IN      SOA     dns.tabiya.local. root.tabiya.local. (
-                        2019092402  ;       serial
+                        2019102601  ;       serial
                         21600       ;       refresh
                         3600        ;       retry
                         604800      ;       expire
@@ -12,20 +12,20 @@ dns     IN      A       192.168.2.200
 
 ; DB
 db31    IN      A       192.168.2.31
+db32    IN      A       192.168.2.32
+db33    IN      A       192.168.2.33
 
 ; TEST
-test41  IN      A       192.168.2.41
-test42  IN      A       192.168.2.42
-test1   IN      A       192.168.2.91
-test2   IN      A       192.168.2.92
-test3   IN      A       192.168.2.93
-test4   IN      A       192.168.2.94
-test5   IN      A       192.168.2.95
+test91  IN      A       192.168.2.91
+test92  IN      A       192.168.2.92
+test93  IN      A       192.168.2.93
+test94  IN      A       192.168.2.94
+test95  IN      A       192.168.2.95
 
 ; MINECRAFT
 mine    IN      A       192.168.2.140
-elb1    IN      A       192.168.2.141
-elb2    IN      A       192.168.2.142
+elb141  IN      A       192.168.2.141
+elb142  IN      A       192.168.2.142
 
 ; WEB = NGINX
 www     IN      A       192.168.2.160
@@ -34,13 +34,15 @@ srv2    IN      A       192.168.2.166
 srv3    IN      A       192.168.2.167
 
 ; ANSIBLE
-home    IN      A       192.168.2.170
-ans1    IN      A       192.168.2.171
-ans2    IN      A       192.168.2.172
-home1   IN      A       192.168.2.175
-home2   IN      A       192.168.2.176
+home170 IN      A       192.168.2.170
+home171 IN      A       192.168.2.171
+
+; ANSIBLE = GUEST
 ans181  IN      A       192.168.2.181
 ans182  IN      A       192.168.2.182
+ans183  IN      A       192.168.2.183
+ans184  IN      A       192.168.2.184
+ans185  IN      A       192.168.2.185
 
 ; unknown
 ssh     IN      A       192.168.2.190
