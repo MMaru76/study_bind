@@ -29,9 +29,14 @@ $TTL 86400
 
 ; WEB = NGINX
 160     IN      PTR     www.tabiya.local.
-165     IN      PTR     srv1.tabiya.local.
-166     IN      PTR     srv2.tabiya.local.
-167     IN      PTR     srv3.tabiya.local.
+161     IN      PTR     srv161.tabiya.local.
+162     IN      PTR     srv162.tabiya.local.
+163     IN      PTR     srv163.tabiya.local.
+
+; WEB = NGINX = PORT:8080
+165     IN      PTR     srv165.tabiya.local.
+166     IN      PTR     srv166.tabiya.local.
+167     IN      PTR     srv167.tabiya.local.
 
 ; ANSIBLE = HOST
 170     IN      PTR     home170.tabiya.local.

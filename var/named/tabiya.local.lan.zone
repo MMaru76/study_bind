@@ -29,9 +29,14 @@ elb142  IN      A       192.168.2.142
 
 ; WEB = NGINX
 www     IN      A       192.168.2.160
-srv1    IN      A       192.168.2.165
-srv2    IN      A       192.168.2.166
-srv3    IN      A       192.168.2.167
+srv161  IN      A       192.168.2.161
+srv162  IN      A       192.168.2.162
+srv163  IN      A       192.168.2.163
+
+; WEB = NGINX = PORT:8080
+srv165  IN      A       192.168.2.165
+srv166  IN      A       192.168.2.166
+srv167  IN      A       192.168.2.167
 
 ; ANSIBLE
 home170 IN      A       192.168.2.170
