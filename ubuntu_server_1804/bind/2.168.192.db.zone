@@ -1,56 +1,32 @@
 $TTL 86400
 @       IN      SOA     dns.tabiya.local. root.tabiya.local. (
-                        2019110201  ;       serial
+                        2019110301  ;       serial
                         21600       ;       refresh
                         3600        ;       retry
                         604800      ;       expire
                         2600        ;       minimum
                         )
         IN      NS      dns.tabiya.local.
+; =========================================
 ; DNS
 200     IN      PTR     dns.tabiya.local.
 
-; DB
-31      IN      PTR     db31.tabiya.local.
-32      IN      PTR     db32.tabiya.local.
-33      IN      PTR     db33.tabiya.local.
-
-; TEST
-91      IN      PTR     test91.tabiya.local.
-92      IN      PTR     test92.tabiya.local.
-93      IN      PTR     test93.tabiya.local.
-94      IN      PTR     test94.tabiya.local.
-95      IN      PTR     test95.tabiya.local.
-
-; MINECRAFT
-140     IN      PTR     mine.tabiya.local.
-141     IN      PTR     elb141.tabiya.local.
-142     IN      PTR     elb142.tabiya.local.
-
-; WEB = NGINX
-160     IN      PTR     www.tabiya.local.
-161     IN      PTR     srv161.tabiya.local.
-162     IN      PTR     srv162.tabiya.local.
-163     IN      PTR     srv163.tabiya.local.
-
-; WEB = NGINX = PORT:8080
-165     IN      PTR     srv165.tabiya.local.
-166     IN      PTR     srv166.tabiya.local.
-167     IN      PTR     srv167.tabiya.local.
-
 ; ANSIBLE = HOST
 170     IN      PTR     home170.tabiya.local.
-171     IN      PTR     home171.tabiya.local.
 
-; ANSIBLE = GUEST
-181     IN      PTR     ans181.tabiya.local.
-182     IN      PTR     ans182.tabiya.local.
-183     IN      PTR     ans183.tabiya.local.
-184     IN      PTR     ans184.tabiya.local.
-185     IN      PTR     ans185.tabiya.local.
+; =========================================
+; Load Balancer
+11      IN      PTR     lb-1e.tabiya.local.
+12      IN      PTR     lb-2e.tabiya.local.
 
-; unknown
-190     IN      PTR     ssh.tabiya.local.
+; Application Server
+21      IN      PTR     app-1e.tabiya.local.
+22      IN      PTR     app-2e.tabiya.local.
 
-; MARU
-140     IN      PTR     t460.tabiya.local.
+; Database Server
+31      IN      PTR     db-1e.tabiya.local.
+32      IN      PTR     db-2e.tabiya.local.
+
+; Distributed source Server
+51      IN      PTR     web-v1e.tabiya.local.
+61      IN      PTR     db-v1e.tabiya.local.
