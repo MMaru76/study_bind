@@ -14,6 +14,11 @@ options {
 	// 	0.0.0.0;
 	// };
 
+	# 問い合わせを許可する範囲
+	allow-query { localhost; 192.168.2.0/24; };
+	# 再帰検索を許可する範囲
+	allow-recursion { localhost; 192.168.2.0/24; };
+
 	//========================================================================
 	// If BIND logs error messages about the root key being expired,
 	// you will need to update your keys.  See https://www.isc.org/bind-keys
@@ -21,6 +26,6 @@ options {
 	dnssec-validation auto;
 
 	auth-nxdomain no;    # conform to RFC1035
-	listen-on-v6 { any; };
+	listen-on-v6 { none; };
 };
 

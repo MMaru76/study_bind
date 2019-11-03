@@ -1,0 +1,17 @@
+$TTL 86400
+@   IN  SOA     dlp.srv.world. root.srv.world. (
+        2019042401  ;Serial
+        3600        ;Refresh
+        1800        ;Retry
+        604800      ;Expire
+        86400       ;Minimum TTL
+)
+        # ネームサーバー定義
+        IN  NS      dlp.srv.world.
+        # ネームサーバーの外部アドレス
+        IN  A       172.16.0.82
+        # メールエクスチェンジャ定義
+        IN  MX 10   dlp.srv.world.
+
+# ホスト名に関連付けるIPアドレスを定義
+dlp     IN  A       172.16.0.82

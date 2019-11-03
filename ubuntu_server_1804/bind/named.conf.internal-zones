@@ -1,0 +1,17 @@
+view "internal" {
+        match-clients {
+                localhost;
+                10.0.0.0/24;
+        };
+        zone "tabiya.local" {
+                type master;
+                file "/etc/bind/tabiya.local.lan";
+                allow-update { none; };
+        };
+        zone "2.168.192.in-addr.arpa" {
+                type master;
+                file "/etc/bind/2.168.192.db";
+                allow-update { none; };
+        };
+        include "/etc/bind/named.conf.default-zones";
+};
