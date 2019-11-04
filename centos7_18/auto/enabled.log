@@ -1,0 +1,19 @@
+[root@dns ~]# systemctl status named
+● named.service - Berkeley Internet Name Domain (DNS)
+   Loaded: loaded (/usr/lib/systemd/system/named.service; enabled; vendor preset: disabled)
+   Active: active (running) since 月 2019-11-04 20:04:19 JST; 5min ago
+ Main PID: 2309 (named)
+   CGroup: /system.slice/named.service
+           └─2309 /usr/sbin/named -u named -c /etc/named.conf
+
+11月 04 20:04:19 dns.tabiya.local named[2309]: zone 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa/IN/internal: lo...serial 0
+11月 04 20:04:19 dns.tabiya.local named[2309]: zone localhost/IN/internal: loaded serial 0
+11月 04 20:04:19 dns.tabiya.local named[2309]: zone tabiya.local/IN/internal: loaded serial 2019110401
+11月 04 20:04:19 dns.tabiya.local named[2309]: zone 2.168.192.in-addr.arpa/IN/internal: loaded serial 2019110401
+11月 04 20:04:19 dns.tabiya.local named[2309]: zone localhost.localdomain/IN/internal: loaded serial 0
+11月 04 20:04:19 dns.tabiya.local named[2309]: all zones loaded
+11月 04 20:04:19 dns.tabiya.local systemd[1]: Started Berkeley Internet Name Domain (DNS).
+11月 04 20:04:19 dns.tabiya.local named[2309]: running
+11月 04 20:04:29 dns.tabiya.local named[2309]: managed-keys-zone/internal: Unable to fetch DNSKEY set '.': timed out
+11月 04 20:04:29 dns.tabiya.local named[2309]: resolver priming query complete
+Hint: Some lines were ellipsized, use -l to show in full.
