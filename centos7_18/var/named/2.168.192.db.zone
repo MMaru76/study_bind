@@ -27,3 +27,7 @@ $TTL 86400
 ; Distributed source Server
 51      IN      PTR     web-v1e.tabiya.local.
 61      IN      PTR     db-v1e.tabiya.local.
+
+; Nginx virtual Server
+81      IN      PTR     vr1.tabiya.local.
+82      IN      PTR     vr2.tabiya.local.
