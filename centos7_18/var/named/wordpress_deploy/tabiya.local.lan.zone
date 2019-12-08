@@ -1,0 +1,33 @@
+$TTL 86400
+@       IN      SOA     dns.tabiya.local. root.tabiya.local. (
+                        2019112401  ;       serial
+                        21600       ;       refresh
+                        3600        ;       retry
+                        604800      ;       expire
+                        2600        ;       minimum
+                        )
+        IN      NS      dns.tabiya.local.
+; =========================================
+; DNS = ANSIBLE
+dns     IN      A       192.168.2.200
+
+; =========================================
+; Load Balancer
+lb1e   IN      A       192.168.2.11
+lb2e   IN      A       192.168.2.12
+
+; Application Server
+app1e  IN      A       192.168.2.21
+app-2e  IN      A       192.168.2.22
+
+; Database Server
+db1e   IN      A       192.168.2.31
+db2e   IN      A       192.168.2.32
+
+; Distributed source Server
+webv1e IN      A       192.168.2.51
+dbv1e  IN      A       192.168.2.61
+
+; Nginx virtual Server
+vr1     IN      A       192.168.2.81
+vr2     IN      A       192.168.2.82

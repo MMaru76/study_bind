@@ -1,6 +1,6 @@
 $TTL 86400
 @       IN      SOA     dns.tabiya.local. root.tabiya.local. (
-                        2019112401  ;       serial
+                        2019120801  ;       serial
                         21600       ;       refresh
                         3600        ;       retry
                         604800      ;       expire
@@ -13,21 +13,8 @@ $TTL 86400
 
 ; =========================================
 ; Load Balancer
-11      IN      PTR     lb1e.tabiya.local.
-12      IN      PTR     lb2e.tabiya.local.
-
-; Application Server
-21      IN      PTR     app1e.tabiya.local.
-22      IN      PTR     app2e.tabiya.local.
-
-; Database Server
-31      IN      PTR     db1e.tabiya.local.
-32      IN      PTR     db2e.tabiya.local.
-
-; Distributed source Server
-51      IN      PTR     webv1e.tabiya.local.
-61      IN      PTR     dbv1e.tabiya.local.
-
-; Nginx virtual Server
-81      IN      PTR     vr1.tabiya.local.
-82      IN      PTR     vr2.tabiya.local.
+91      IN      PTR     test91.tabiya.local.
+92      IN      PTR     test92.tabiya.local.
+93      IN      PTR     test93.tabiya.local.
+94      IN      PTR     test94.tabiya.local.
+95      IN      PTR     test95.tabiya.local.
