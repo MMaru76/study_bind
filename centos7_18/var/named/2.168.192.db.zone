@@ -12,7 +12,7 @@ $TTL 86400
 200     IN      PTR     dns.tabiya.local.
 
 ; =========================================
-; Load Balancer
+
 91      IN      PTR     test91.tabiya.local.
 92      IN      PTR     test92.tabiya.local.
 93      IN      PTR     test93.tabiya.local.
