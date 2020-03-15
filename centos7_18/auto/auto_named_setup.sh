@@ -10,7 +10,7 @@ cp -fv dns_git/study_bind/centos7_18/var/named/2.168.192.db.zone /var/named/2.16
 
 # diff
 echo "==================== start config ===================="
-/etc/named.conf /etc/named/backup/named.conf.`date "+%F"`
+diff -u /etc/named.conf /etc/named/backup/named.conf.`date "+%F"`
 echo "==================== end config ===================="
 echo " "
 echo "==================== start tabiya ===================="
