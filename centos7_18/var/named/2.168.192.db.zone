@@ -1,6 +1,6 @@
 $TTL 86400
 @       IN      SOA     dns.tabiya.local. root.tabiya.local. (
-                        2019120801  ;       serial
+                        2020031501  ;       serial
                         21600       ;       refresh
                         3600        ;       retry
                         604800      ;       expire
@@ -13,9 +13,22 @@ $TTL 86400
 
 ; =========================================
 
-91      IN      PTR     test91.tabiya.local.
-92      IN      PTR     test92.tabiya.local.
-93      IN      PTR     test93.tabiya.local.
-94      IN      PTR     test94.tabiya.local.
-95      IN      PTR     test95.tabiya.local.
-memo
+; puppet
+50      PTR     master50.tabiya.local.
+51      PTR     web51.tabiya.local.
+52      PTR     web52.tabiya.local.
+53      PTR     lb53.tabiya.local.
+54      PTR     db54.tabiya.local.
+
+; test server
+91      PTR     test91.tabiya.local.
+92      PTR     test92.tabiya.local.
+93      PTR     test93.tabiya.local.
+94      PTR     test94.tabiya.local.
+95      PTR     test95.tabiya.local.
+
+; unknown
+180     PTR	ore180.tabiya.local.
+
+; docker
+220     PTR	docker.tabiya.local.
