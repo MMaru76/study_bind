@@ -8,13 +8,12 @@ $TTL 86400
                         )
         IN      NS      dns.tabiya.local.
 ; =========================================
-; DNS = ANSIBLE
+; DNS = ANSIBLE = Puppet Master
 200     IN      PTR     dns.tabiya.local.
 
 ; =========================================
 
-; puppet
-50      PTR     master50.tabiya.local.
+; Puppet Agents
 51      PTR     web51.tabiya.local.
 52      PTR     web52.tabiya.local.
 53      PTR     lb53.tabiya.local.
@@ -26,6 +25,9 @@ $TTL 86400
 93      PTR     test93.tabiya.local.
 94      PTR     test94.tabiya.local.
 95      PTR     test95.tabiya.local.
+
+; aws
+150     PTR     aws.tabiya.local.
 
 ; unknown
 180     PTR	ore180.tabiya.local.
